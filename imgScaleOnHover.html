@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scale Image on Hover</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <style>
+        html {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .container {
+            position: relative;
+            width: 480px;
+            height: 320px;
+            overflow: hidden;
+        }
+
+        .img-itself {
+            position: absolute;
+            top: 0;
+            left: 0;
+            -webkit-transition: 0.6s ease;
+            transition: 0.6s ease;
+        }
+
+        .container:hover .img-itself {
+            transform: scale(1.256);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="https://images.pexels.com/photos/3214950/pexels-photo-3214950.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+            alt="demo" class="img-itself">
+    </div>
+
+    <p>Photo by <a
+            href="https://www.pexels.com/@fikayo-aderoju-1545972?utm_content=attributionCopyText&utm_medium=referral&utm_source=pexels">Fikayo
+            Aderoju</a> from <a href="https://www.pexels.com/">Pexels</a></p>
+</body>
+
+</html>
